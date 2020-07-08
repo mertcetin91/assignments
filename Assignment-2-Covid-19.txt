@@ -1,0 +1,13 @@
+age = str(input("Are you a cigarette addict older than 75 years old?: (True/False) ")).title().strip() == "True" # can be assigned only True/False
+chronic = str(input("Do you have a severe chronic disease?: (True/False) ")).title().strip() == "True" # can be assigned only True/False
+immune = str(input("Is your immune system too weak?: (True/False) ")).title().strip() == "True" # can be assigned only True/False
+
+print(age,chronic,immune)
+
+risk = age or chronic or immune
+print(risk)
+
+if risk :
+    print("You are in the risky group")
+else :
+    print("You are not in the risky group")
