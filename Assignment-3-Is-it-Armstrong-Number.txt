@@ -1,0 +1,17 @@
+sayi = input(Pozitif bir tamsayi giriniz:)
+kuvvet = len(sayi) #Basamak değerini aldık.
+sayi = int(sayi)
+toplam = 0
+rakam = 0
+kontrol = sayi
+for i in range(kuvvet):
+    rakam = sayi % 10 # Kalanı aldık.
+    toplam += rakam ** kuvvet # Kuvvetini aldık.
+    sayi = sayi // 10 # Bölümü aldık.
+ 
+if(toplam == kontrol):
+    print( Bir armstrong sayıdır)
+elif(kontrol <= 0):
+    print(Geçersiz bir giriş. Sayısal olmayan, kayan nokta veya negatif değerler kullanmayın!)
+else:
+    print(Armstrong sayısı değildir)
