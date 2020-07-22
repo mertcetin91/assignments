@@ -1,0 +1,5 @@
+yıl = int(input("dört rakamlı bir yıl giriniz :"))
+if yıl % 4 == 0 and yıl % 100 != 0 or yıl % 400 == 0:
+    print("{} leap yeardır".format(yıl))
+else :
+    print("{} leap year değildir".format(yıl))
