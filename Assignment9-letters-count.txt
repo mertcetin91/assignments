@@ -1,0 +1,21 @@
+kelime = input("bir cümle giriniz: ")
+
+def karakter_sayma_fonksiyonu(str1):
+
+    dict = {}
+
+    for i in str1:
+
+        keys = dict.keys()
+
+        if i in keys:
+
+            dict[i] += 1
+
+        else:
+
+            dict[i] = 1
+
+    return dict
+
+print(karakter_sayma_fonksiyonu(kelime))
